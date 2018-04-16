@@ -1,0 +1,99 @@
+/* General */
+
+html {
+	font-size: 16px;
+}
+
+
+/* NAV */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	padding: 1.5rem;
+}
+
+.logo img {
+	height: 2rem;
+}
+
+.logo span {
+	text-transform: uppercase;
+}
+
+.logo span:last-child {
+	color: red;
+}
+
+.nav-links li {
+	padding: 0.5rem;
+	display: inline;
+}
+
+
+/* BANNER */
+
+.banner {
+	display: flex;
+	width: 100%;
+	padding: 0.5rem;
+	background-color: silver;
+}
+
+.banner img {
+	width: 60%;
+	padding: 1.5rem;
+}
+
+.banner-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.banner-content button {
+	padding: 0.5rem;
+}
+
+
+/* ACADEMY INFO */
+
+/*content*/
+.academy-info {
+	display: flex;
+}
+
+.academy-info .content {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.academy-info img {
+	max-width: 100%;
+}
+
+/*info attributes*/
+.ai-info {
+	width: 40%
+}
+
+.ai-info ul li {
+	display: flex;
+	padding: 16px;
+	border: 1px solid silver;
+}
+
+.ai-info img {
+	width: 35%;
+	height: auto;
+}
+
+.ai-info .details {
+	width: 65%;
+}
+
+.details .detail {
+	padding: 0.5rem 0;
+}
