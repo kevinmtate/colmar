@@ -97,3 +97,38 @@ nav {
 .details .detail {
 	padding: 0.5rem 0;
 }
+
+
+/* COURSES CATALOG */
+
+.course-catalog {
+	padding: 2rem;
+	background-color: silver;
+}
+
+.course-catalog ul {
+	padding: 2rem 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.course-catalog ul li {
+	margin: 2rem;
+	background-color: white;
+}
+
+.course-catalog-info {
+	padding: 1rem;
+	max-width: 17rem;
+	margin-bottom: 0.5rem;
+}
+
+.courses {
+	text-transform: uppercase;
+}
+
+.course-subjects {
+	font-size: 2rem;
+	color: silver;
+}
