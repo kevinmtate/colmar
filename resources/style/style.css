@@ -132,3 +132,29 @@ nav {
 	font-size: 2rem;
 	color: silver;
 }
+
+
+/* THESIS EXHIBIT */
+
+.thesis {
+	padding: 1.5rem;
+}
+
+.thesis-exhibit-content {
+	display: flex;
+	padding: 0.5rem;
+}
+
+.thesis-exhibit-content ul li {
+	display: flex;
+	align-items: center;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid silver;
+}
