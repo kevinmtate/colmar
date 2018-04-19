@@ -1,18 +1,50 @@
 /* General */
 
 html {
-	font-size: 16px;
+
 }
 
+body {
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 3em;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 2em;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+.detail {
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+a {
+	font-size: 1.5rem;
+	color: blue;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+a:hover {
+	color: #00BCD4;
+}
 
 /* NAV */
 
-nav {
+header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 4rem;
-	padding: 1.5rem;
+	padding: 0rem 1.5rem;
 }
 
 .logo img {
@@ -21,15 +53,27 @@ nav {
 
 .logo span {
 	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .logo span:last-child {
-	color: red;
+	color: #9e9e9eb8;
 }
 
-.nav-links li {
-	padding: 0.5rem;
-	display: inline;
+nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header nav span {
+	font-size: 1.25rem;
+	padding-left: 1rem;
+}
+
+header nav span:hover {
+	color: #00BCD4;
 }
 
 
@@ -37,9 +81,8 @@ nav {
 
 .banner {
 	display: flex;
-	width: 100%;
 	padding: 0.5rem;
-	background-color: silver;
+	background-color: #9e9e9e73;
 }
 
 .banner img {
@@ -55,6 +98,18 @@ nav {
 
 .banner-content button {
 	padding: 0.5rem;
+	font-size: 2rem;
+	color: white;
+	background-color: black;
+}
+
+.banner-content button:hover {
+	background-color: #00BCD4;
+	/* box-shadow: */
+}
+
+.banner-content button:active {
+	background-color: orange;
 }
 
 
@@ -76,7 +131,7 @@ nav {
 
 /*info attributes*/
 .ai-info {
-	width: 40%
+	width: 40%;
 }
 
 .ai-info ul li {
@@ -88,14 +143,6 @@ nav {
 .ai-info img {
 	width: 35%;
 	height: auto;
-}
-
-.ai-info .details {
-	width: 65%;
-}
-
-.details .detail {
-	padding: 0.5rem 0;
 }
 
 
