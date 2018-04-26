@@ -25,7 +25,6 @@ h2, h3 {
 
 a {
 	text-decoration: none;
-	color: #FF2400;
 }
 
 /* NAV */
@@ -59,7 +58,7 @@ header {
 
 .logo span {
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: bold;
 	color: #FF2400;
 }
@@ -77,7 +76,7 @@ nav {
 }
 
 nav a {
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	padding-left: 1rem;
 	color: gray;
 	transition: color .5s;
@@ -135,17 +134,18 @@ nav a:hover .nav-underline {
 
 .banner-content a {
 	padding: 0.5rem;
-	font-size: 2rem;
+	font-size: 2em;
 	background-color: #FF2400;
 	width: 60%;
 	border-radius: 0.25rem;
 	color: white;
 	text-align: center;
+	transition: box-shadow .2s, background-color .2s, color .2s;
 }
 
 .banner-content a:hover {
 	background-color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+	box-shadow: 0 2px 5px gray;
 	color: #FF2400;
 }
 
@@ -173,7 +173,7 @@ nav a:hover .nav-underline {
 }
 
 .academy-info p, .academy-info blockquote {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	color: gray;
 	padding: 0.5rem 0;
 }
@@ -208,47 +208,63 @@ nav a:hover .nav-underline {
 	font-size: 1.5rem;
 }
 
-.details a:hover {
-	color: #2400FF;
+.details a {
+	color: #FF2400;
 }
 
-#guest-lecture {
-	background-color: #9e9e9e40;
+.details a:hover {
+	color: #2400FF;
 }
 
 
 /* COURSES CATALOG */
 
 .course-catalog {
-	padding: 2rem;
 	background-color: #9e9e9e40;
 }
 
+.course-catalog h2 {
+	text-align: center;
+	padding-top: 2rem;
+}
+
 .course-catalog ul {
-	padding: 2rem 0.5rem;
+	padding: 1rem 3.5rem;
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .course-catalog ul li {
-	margin: 2rem;
+	margin: 1rem;
 	background-color: white;
 }
 
 .course-catalog-info {
 	padding: 1rem;
-	max-width: 17rem;
+	max-width: 500px;
 	margin-bottom: 0.5rem;
 }
 
 .courses {
 	text-transform: uppercase;
+	padding: 0.5rem 0;
+	color: black;
 }
 
-.course-subjects {
-	font-size: 2rem;
-	color: silver;
+.course-catalog-info .detail {
+	color: gray;
+}
+
+/* this is the code that adds a box shadow and changes the background to hover focused list items */
+/* pretty sure this is way easier to do just add a class using js but couldnt think of another way with just html/css (and wasnt gonna be that big of an overachiever) */
+.hover-detail:hover { 
+	box-shadow: 0 0 60px gray;
+	background-color: #9e9e9e40;
+}
+
+.hover-detail { 
+	transition: box-shadow .5s, background-color .5s;
 }
 
 
