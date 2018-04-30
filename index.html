@@ -9,11 +9,11 @@
 	<!-- Nav bar -->
 	<header>
 		<div class="header-content">
-			<div class="logo">
+			<div class="logo desktop">
 				<img src="resources/images/ic-logo.svg" alt="colmar academy logo"/>
 				<span>Colmar</span><span>Academy</span>
 			</div>
-			<nav>
+			<nav class="desktop">
 				<a href="#">
 					On Campus
 					<div class="nav-underline"></div>
@@ -31,6 +31,20 @@
 					<div class="nav-underline"></div>
 				</a>
 			</nav>
+			<nav class="mobile">
+				<a href="#">
+					<img src="resources/images/ic-logo.svg" alt="colmar academy logo"/>
+				</a>
+				<a href="#">
+					<img src="resources/images/ic-on-campus.svg" alt="on campus"/>
+				</a>
+				<a href="#">
+					<img src="resources/images/ic-online.svg" alt="online"/>
+				</a>
+				<a href="#">
+					<img src="resources/images/ic-login.svg" alt="login"/>
+				</a>
+			</nav>
 		</div>
 	</header>
 
@@ -40,7 +54,7 @@
 		<div class="banner-content">
 			<h2>Learn something new everyday</h2>
 			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-			<a href="#" type="button">Start Here</a>
+			<a href="#">Start Here</a>
 		</div>
 	</div>
 
@@ -56,7 +70,8 @@
 		</div>
 		<ul>
 			<li class="side-item hover-detail">
-				<img src="resources/images/information-orientation.jpg" alt="orientation" />
+				<img class="desktop" src="resources/images/information-orientation.jpg" alt="orientation" />
+				<img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="orientation" />
 				<div class="details">
 					<h3>Orientation Date</h3>
 					<p class="detail">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -64,15 +79,17 @@
 				</div>
 			</li>
 			<li class="side-item hover-detail">
-				<img src="resources/images/information-campus.jpg" alt="photo of campus" />
+				<img class="desktop" src="resources/images/information-campus.jpg" alt="photo of campus" />
+				<img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="photo of campus" />
 				<div class="details">
 					<h3>Our Campus</h3>
 					<p class="detail">Find which campus is close to you</p>
 					<a href="#">Read More</a>
 				</div>
 			</li>
-			<li class="side-item hover-detail" id="guest-lecture">
-				<img src="resources/images/information-guest-lecture.jpg" alt="guest lecture guy" />
+			<li class="side-item hover-detail">
+				<img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="guest lecture guy" />
+				<img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture guy" />
 				<div class="details">
 					<h3>Our Guest Lecture</h3>
 					<p class="detail">Join a keynote with Oliver Sack about music in medical treatment</p>

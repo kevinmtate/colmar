@@ -106,23 +106,6 @@ nav a:hover .nav-underline {
 	width: 100%;
 }
 
-/*header animation*/
-
-@keyframes logoposition1 {
-	to {
-		left: 42%;
-	}
-}
-
-@keyframes logoposition2 {
-	from {
-		left: 42%;
-	}
-	to {
-		left: 0;
-	}
-}
-
 /* BANNER */
 
 .banner {
@@ -241,10 +224,6 @@ affects academy info and thesis exhibit sections */
 	font-size: 1.5rem;
 }
 
-.side-item:active {
-	background-color: red;
-}
-
 /* this is the code that adds a box shadow and changes the background to hover focused list items */
 /* pretty sure this is way easier to do just add a class using js but couldnt think of another way with just html/css (and wasnt gonna be that big of an overachiever) */
 .hover-detail:hover { 
@@ -341,4 +320,97 @@ footer {
 	padding: 1rem 1.5rem;
 	margin-bottom: 4rem;
 	color: gray;
+}
+
+
+/* MOBILE */
+
+.mobile {
+	display: none;
+}
+
+.mobile img {
+	width: 2rem;
+}
+
+.mobile a:active img {
+	width: 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	/* nav */
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* banner */
+	.banner {
+		flex-direction: column;
+		padding: 0;
+		align-items: center;
+	}
+
+	.banner img {
+		width: 100%;
+		padding: 0;
+	}
+
+	.banner-content {
+		margin: 1rem;
+	}
+
+	.banner-content h2 {
+		padding: 1rem 0;
+	}
+
+	.banner-content h3 {
+		margin: 0;
+		padding: 1rem 0;
+	}
+
+	.banner-content a {
+		box-shadow: none;
+		margin: 0.5rem 0 1rem 0;
+		width: 100%;
+	}
+
+	/* academy info */
+	.academy-info .content {
+		display: none;
+	}
+
+	.academy-info ul {
+		width: 100%;
+	}
+
+	.side-item {
+		flex-direction: column;
+		border: none;
+		align-items: left;
+		padding: 1rem;
+		padding-bottom: 3rem;
+	}
+
+	.side-item img {
+		margin: 0;
+		width: 100%;
+	}
+
+	.side-item .details {
+		padding: 1rem;
+	}
+
+	/* hover reset for weird look on mobile when touching and not hovering */
+	.hover-detail:hover {
+		box-shadow: none;
+		background-color: white;
+		cursor: default;
+	}
+	/* -- */
 }
