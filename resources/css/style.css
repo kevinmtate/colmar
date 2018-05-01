@@ -410,6 +410,7 @@ footer {
 	}
 	/* -- */
 
+	/*course catalog*/
 	.courses-mobile {
 		background-color: #9e9e9e40;
 		padding: 1rem;
@@ -417,12 +418,44 @@ footer {
 	}
 
 	.course-catalog ul {
-		padding: 1rem;
+		padding: 0 0 1rem 0;
 	}
 
 	.course-catalog {
 		background-color: white;
 		border-top: 1px solid #9e9e9e40;
 		border-bottom: 1px solid #9e9e9e40;
+		padding: 1rem;
+	}
+
+	.course-catalog h2 {
+		padding: 1rem 0;
+	}
+
+	.course-catalog ul li {
+		margin: 0.25rem 0;
+	}
+
+	/*video section*/
+	.video-section {
+		width: 100%;
+		padding: 0;
+	}
+
+	.thesis h2 {
+		padding: 2rem 0 1rem 0;
+	}
+
+	.thesis {
+		padding: 0;
+	}
+
+	/*footer*/
+	footer {
+		padding: 1.5rem;
+	}
+
+	footer span {
+		padding: 1rem;
 	}
 }
