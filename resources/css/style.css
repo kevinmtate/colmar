@@ -333,10 +333,6 @@ footer {
 	width: 2rem;
 }
 
-.mobile a:active img {
-	width: 3rem;
-}
-
 @media only screen and (max-width: 1000px) {
 	/* nav */
 	.desktop {
@@ -413,4 +409,20 @@ footer {
 		cursor: default;
 	}
 	/* -- */
+
+	.courses-mobile {
+		background-color: #9e9e9e40;
+		padding: 1rem;
+		width: 100%;
+	}
+
+	.course-catalog ul {
+		padding: 1rem;
+	}
+
+	.course-catalog {
+		background-color: white;
+		border-top: 1px solid #9e9e9e40;
+		border-bottom: 1px solid #9e9e9e40;
+	}
 }
