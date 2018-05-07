@@ -1,3 +1,3 @@
-Hiya!!
+Hi Colmar Academy graders,
 
-Colmar Academy Capstone Project comin atcha
+Nothing really to note for this one. Let me know what you think and thanks for taking the time to review the project :)
